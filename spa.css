@@ -1,0 +1,228 @@
+/* Jamie Morris - Final - Wed D 2 - 5-06-19 - Styles */
+
+/* Styles for all */
+
+* { box-sizing: border-box; }
+header, nav, main, footer { display: block; }
+
+/* Styles for body */
+
+
+body {
+    background-color: #a31ea2;
+    color: #3F2860;
+        font-family: Veranda, Arial, sans-serif;
+} 
+
+/* Styles for wrapper */
+
+
+#wrapper { width: 80%; 
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ece7d6;
+    min-width: 1200px; 
+    max-width: 1480px;
+    
+}
+
+/* Styles for header */
+
+
+header { background-color:rgba(0,125,0,0.3);
+    background-image: url("spa_header.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 150px;
+}
+
+/* Styles for tables */
+
+table { width: 60%; 
+    margin-left: auto; 
+    margin-right: auto; 
+    border: 1px solid #3F2860; 
+    border-collapse: collapse; 
+    margin-bottom: 1em; 
+}
+
+
+td, td { padding: 5px; 
+    border: 1px solid #3F2860;
+}
+
+
+tr:nth-of-type(even) { background-color: rgba(0,125,0,0.3);
+    
+}
+
+/* Styles for heading */
+
+
+h1 { padding-top: 50px;
+    padding-left: 2em;
+} 
+
+/* Styles for Nav */
+
+
+nav {     float: left;
+     width: 160px;
+     font-weight: bold;
+     padding: 1em;
+    }
+
+/* Styles for Nav links */
+
+
+nav a {     display: block;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    border: outset 3px #CCCCCC; 
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+/* Styles for Nav links used */
+
+
+nav a:link { color: #006400; }
+nav a:visited { color: #497777; }
+nav a:hover { color: #A26100; border: 3px inset #333333; }
+nav ul {list-style-type: none;
+padding-left: 0px;}
+
+/* Styles for Main area */
+
+
+main { padding-left: 2em;
+    padding-right: 2em;
+     margin-left: 170px;
+     padding-top: 1em;
+} 
+
+.studio { 
+    font-style: italic;   
+}
+
+.floatleft { float: left;
+    margin-right: 4em;}
+
+.clear { clear: both;}
+
+/* Styles for footer */
+
+
+    footer {
+    background-color:rgba(0,125,0,0.4);
+    font-size: .70em;
+    font-style: italic;    
+    text-align: center;
+    padding: 1em;
+
+} 
+
+/* Styles mobile and desktop id */
+
+
+#Mobile { display: none; }
+#Desktop { display: inline; }
+
+/* Styles for label */
+
+
+label { float: left; 
+    display: block; 
+    text-align: right; 
+    font-weight: bold; 
+    width: 10em; 
+    padding-right: 1em
+}
+
+/* Styles for text area */
+
+
+input, textarea { display: block; 
+    margin-bottom: 2em; 
+}
+
+/* Styles for submit button */
+
+
+mySubmit { margin-left: 12em; 
+    
+}
+
+/* Styles for form */
+
+
+form { padding: 3em; 
+}
+
+/* Media Query for desktop - large */
+
+@media only screen and (max-width: 1024px) { 
+    body { margin: 0; 
+           padding: 0; }
+    #wrapper { width: 100%; 
+        min-width: 0; 
+        margin: 0; 
+        padding: 0; }
+    header { padding-top: 1px; }
+    nav { float: none;
+	      padding-left: 2em;
+	      width: auto; }
+	nav a { padding: 0.2em;
+	      margin-left: 0.3em;
+		  float: left;
+		  width: 23%; }
+	main  { padding: 2.5em 1em;
+	       margin: 0;
+		   font-size: 90%;
+		   clear: both; }
+    #hero img { width: 100%; height: auto; }
+	h2, h3, p, dl { padding-left: 2em; padding-right: 2em; }
+	main ul { margin-left: 2em; }
+	.floatleft { margin-left: 2em; margin-bottom: 1em;  }
+	.clear { padding-left: 2em; }
+}
+
+/* Media Query for Tablet - medium */
+
+
+@media only all and (max-width: 768px) {
+	h1 { font-size: 2em; padding-top: 0.25em; padding-left: 1.5em; width: 85%; }
+	nav a { padding: 0.5em; width: 45%; float: left; min-width: 6em; margin-left: 0.5em; }
+	main { padding-top: 0; }
+	.floatleft { float: none; display: none; }
+	#hero { display: none; }
+	footer { padding: 0.5em; margin: 0; }
+	#mobile { display: inline; }
+	#desktop { display: none; }
+}
+
+/* Media Query for cell - small */
+
+
+@media only screen and (max-width: 320px)  {
+	h1 { font-size: 2em; padding-top: 0.25em; padding-left: 1.5em; width: 85%; }
+	nav a { padding: 0.5em; width: 45%; float: left; min-width: 6em; margin-left: 0.5em; }
+	main { padding-top: 0; }
+	.floatleft { float: none; display: none; }
+	#hero { display: none; }
+	footer { padding: 0.5em; margin: 0; }
+	#mobile { display: inline; }
+	#desktop { display: none; }
+}
+
+/* Media Query print */
+
+ @media print {
+            body  { background-color: white; }
+            h1    { color: SeaGreen; }
+            p     { font-size: 14pt;
+                    color: SteelBlue;
+                    font-family: "times new roman", times, serif; }
+         } 
+
